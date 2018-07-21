@@ -1,0 +1,6 @@
+<svg class="background">
+  <image id='testing' x="14" y="40" width="300" height="250" href="7.png" />
+  <text id="myLabel" x="50%" y="20%" font-size="50"/>
+  <text id="myDate" x="50%" y="32%" font-size="20" fill="white"/>
+  <text id="mySteps" />
+</svg>
