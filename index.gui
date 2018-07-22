@@ -1,14 +1,61 @@
-<svg viewport-fill="lightblue">
-  <defs>
-    <symbol id="demo">
-      <g id="demogroup">
-        <circle cx="50%" cy="50%" r="50" fill="red" />
-        <animate attributeName="opacity" begin="enable"
-            from="1" to="0" dur="3" final="restore" />
+
+<svg >
+  <g id="demogroup">
+           <image class ="firstFade" id ="firstLayer1" x="140" y ="5" width = "70" height = "70" href = "" 
+        fill-opacity="1" fill="blue" pointer-events="visible">
+    <animate attributeName="opacity" begin ="enable" from=".5" to="1" dur="3" final="restore" />
+  </image>
+    
+      <image class ="firstFade" id ="firstLayer2" x="10" y ="170" width = "70" height = "70" href = ""
+        fill-opacity="1" fill="blue" pointer-events="visible">
+    <animate attributeName="opacity" begin ="enable" from=".5" to="1" dur="3" final="restore" />
+  </image>
+<!--   topright -->
+  <image class ="firstFade" id ="firstLayer3" x="270" y ="14" width = "70" height = "70" href = ""
+        fill-opacity="1" fill="blue" pointer-events="visible">
+    <animate attributeName="opacity" begin ="enable" from=".5" to="1" dur="3" final="restore" />
+  </image>>
+<!--  bottom right  -->
+  <image class ="firstFade" id ="firstLayer4" x="130" y ="170" width = "70" height = "70" href = ""
+        fill-opacity="1" fill="blue" pointer-events="visible">
+    <animate attributeName="opacity" begin ="enable" from=".5" to="1" dur="3" final="restore" />
+  </image>>
+    
+    
+    
+    
       </g>
-    </symbol>
-  </defs>
-  <svg width="100%" height="100%">
-    <use id="demoinstance" href="#demo" width="100%" height="100%" />
-  </svg>
+  
+
+<!--  top left  -->
+
+
+  
+  
+  <!--  top left  -->
+<image id ="secondLayer1" x="70" y ="14" width = "70" height = "70" href = ""/>
+<!--  bottom left  -->
+  <image id ="secondLayer2" x="80" y ="170" width = "70" height = "70" href = ""/>
+<!--   topright -->
+  <image id ="secondLayer3" x="190" y ="14" width = "70" height = "70" href = ""/>
+<!--  bottom right  -->
+  <image id ="secondLayer4" x="190" y ="170" width = "70" height = "70" href = ""/>
+  
+  
+  <!--  top left  -->
+<image class = "thirdFade" id ="thirdLayer1" x="10" y ="80" width = "70" height = "70" href = ""/>
+<!--  right center  -->
+  <image class = "thirdFade" id ="thirdLayer2" x="270" y ="95" width = "70" height = "70" href = ""/>
+<!--   topright -->
+  <image class = "thirdFade" id ="thirdLayer3" x="10" y ="14" width = "70" height = "70" href = "" />
+<!--  bottom right  -->
+  <image class = "thirdFade" id ="thirdLayer4" x="270" y ="170" width = "70" height = "70" href = ""/>
+  
+  
+    <text id="myClock" x="50%" y="50% +20"
+      fill="white" font-size="60" 
+      text-anchor="middle" text-length="5000">00:00</text>
+  
+    <text id="mySteps"  x = "50%" y = "55% + 40" font-size="32"
+        text-length="5000"/>
 </svg>
