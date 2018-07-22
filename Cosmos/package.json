@@ -1,0 +1,53 @@
+{
+  "fitbit": {
+    "appUUID": "62eabe67-8b1e-4d30-bd1f-79cf2dcffb1d",
+    "appType": "clockface",
+    "appDisplayName": "FlashRing2",
+    "iconFile": "resources/icon.png",
+    "wipeColor": "",
+    "requestedPermissions": [
+      "access_activity",
+      "access_user_profile",
+      "access_heart_rate",
+      "run_background"
+    ],
+    "buildTargets": [
+      "higgs"
+    ],
+    "i18n": {
+      "en": {
+        "name": "FlashRing2"
+      },
+      "de": {
+        "name": "FlashRing2"
+      },
+      "es": {
+        "name": "FlashRing2"
+      },
+      "fr": {
+        "name": "FlashRing2"
+      },
+      "it": {
+        "name": "FlashRing2"
+      },
+      "ja": {
+        "name": "FlashRing2"
+      },
+      "zh-tw": {
+        "name": "FlashRing2"
+      },
+      "zh-cn": {
+        "name": "FlashRing2"
+      },
+      "sv": {
+        "name": "FlashRing2"
+      },
+      "nl": {
+        "name": "FlashRing2"
+      },
+      "ko": {
+        "name": "FlashRing2"
+      }
+    }
+  }
+}

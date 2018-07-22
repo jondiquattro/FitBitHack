@@ -1,0 +1,89 @@
+
+<svg >
+  <image  x = "0" y = "0" width = "348" height = "250" href ="background.png"/>
+  <g id="demogroup">
+           <image class ="firstFade" id ="firstLayer1" x="140" y ="5" width = "70" height = "70" href = "" 
+        fill-opacity="1" fill="blue" pointer-events="visible">
+    <animate attributeName="opacity" begin ="load" from=".5" to="1" dur="3" final="restore" />
+  </image>
+    
+      <image class ="firstFade" id ="firstLayer2" x="10" y ="170" width = "70" height = "70" href = ""
+        fill-opacity="1" fill="blue" pointer-events="visible">
+    <animate attributeName="opacity" begin ="load" from=".5" to="1" dur="3" final="restore" />
+  </image>
+<!--   topright -->
+  <image class ="firstFade" id ="firstLayer3" x="270" y ="14" width = "70" height = "70" href = ""
+        fill-opacity="1" fill="blue" pointer-events="visible">
+    <animate attributeName="opacity" begin ="load" from=".5" to="1" dur="3" final="restore" />
+  </image>
+<!--  bottom right  -->
+  <image class ="firstFade" id ="firstLayer4" x="130" y ="170" width = "70" height = "70" href = ""
+        fill-opacity="1" fill="blue" pointer-events="visible">
+    <animate attributeName="opacity" begin ="load" from=".5" to="1" dur="3" final="restore" />
+  </image>
+    
+      <!--  top left  -->
+<image id ="secondLayer1" x="70" y ="14" width = "70" height = "70" href = "" 
+       fill-opacity="1" fill="blue" pointer-events="visible">
+  <animate attributeName="opacity" begin ="load" from="0" to="1" dur="3" final="restore" />
+  </image>
+<!--  bottom left  -->
+  <image id ="secondLayer2" x="80" y ="170" width = "70" height = "70" href = ""
+         fill-opacity="1" fill="blue" pointer-events="visible">
+    <animate attributeName="opacity" begin ="load" from="0" to="1" dur="3" final="restore" />
+  </image>
+ 
+<!--   topright -->
+  <image id ="secondLayer3" x="190" y ="14" width = "70" height = "70" href = ""
+         fill-opacity="1" fill="blue" pointer-events="visible">
+    <animate attributeName="opacity" begin ="load" from="0" to="1" dur="3" final="restore" />
+  </image>
+<!--  bottom right  -->
+  <image id ="secondLayer4" x="190" y ="170" width = "70" height = "70" href = ""
+         fill-opacity="1" fill="blue" pointer-events="visible">
+    <animate attributeName="opacity" begin ="load" from="0" to="1" dur="3" final="restore" />
+  </image>
+    
+    
+    <image class = "thirdFade" id ="thirdLayer1" x="10" y ="80" width = "70" height = "70" href = ""
+           fill-opacity="1" fill="blue" pointer-events="visible">
+    <animate attributeName="opacity" begin ="load" from="0" to="1" dur="3" final="restore" />
+       </image>
+<!--  right center  -->
+  <image class = "thirdFade" id ="thirdLayer2" x="270" y ="95" width = "70" height = "70" href = ""
+         fill-opacity="1" fill="blue" pointer-events="visible">
+    <animate attributeName="opacity" begin ="load" from="0" to="1" dur="3" final="restore" />
+     </image>
+<!--   topright -->
+  <image class = "thirdFade" id ="thirdLayer3" x="10" y ="14" width = "70" height = "70" href = "" 
+         fill-opacity="1" fill="blue" pointer-events="visible">
+    <animate attributeName="opacity" begin ="load" from="0" to="1" dur="3" final="restore" />
+     </image>
+<!--  bottom right  -->
+  <image class = "thirdFade" id ="thirdLayer4" x="270" y ="170" width = "70" height = "70" href = ""
+         fill-opacity="1" fill="blue" pointer-events="visible">
+    <animate attributeName="opacity" begin ="load" from="0" to="1" dur="3" final="restore" />
+     </image>
+   
+      </g>
+  
+
+<!--  top left  -->
+
+
+  
+  
+
+  
+  
+  <!--  top left  -->
+
+  
+  
+    <text id="myClock" x="50%" y="50% +10"
+      fill="white" font-size="60" 
+      text-anchor="middle" text-length="5000">00:00</text>
+  
+    <text id="mySteps"  x = "50%" y = "55% + 40" font-size="32"
+        text-length="5000"/>
+</svg>
