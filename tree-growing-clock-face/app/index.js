@@ -40,8 +40,11 @@ const activeGoal = userActivity.goals.activeMinutes;
 let myClock = document.getElementById("myLabel");
 let myDate = document.getElementById("myDate");
 let dailysteps = document.getElementById("mySteps");
+let comment = document.getElementById("comment");
 let img = document.getElementById("testing");
-let startCount = userActivity.today.adjusted["steps"] || 0;
+// let startCount = userActivity.today.adjusted["steps"] || 0;
+let startCount = 0;
+let amountSteps = 0;
 console.log(stepsGoal);
 
 function applyTheme(background, foreground) {
@@ -52,22 +55,25 @@ function applyTheme(background, foreground) {
 
 function updateStats() {
   const metricSteps = "steps";  // distance, calories, elevationGain, activeMinutes
-  const amountSteps = userActivity.today.adjusted[metricSteps] || 0;
+  // const amountSteps = userActivity.today.adjusted[metricSteps] || 0;
   const metricCals = "calories";  // distance, calories, elevationGain, activeMinutes
   const amountCals = userActivity.today.adjusted[metricCals] || 0;
   const metricActive = "activeMinutes";
   const amountActive = userActivity.today.adjusted[metricActive] || 0;
   const metricElevation = "elevationGain";
   const amountElevation = userActivity.today.adjusted[metricElevation] || 0;
-  
+  const goal = 5000;
+  const map  = {0: "All the best for your goal!", 1: "All the best for your goal!", 2: "Good luck for your goal!", 3: "Still lot of it left.", 4: "Still lot of it left.", 5: "Reached half of goal", 6: "Reached half of goal", 7: "Good! You doing great", 8: "Good! You doing great", 9: " Very little left", 10: "Great Job today!"};
+
+  amountSteps += Math.floor((Math.random() * 200) + 1);
   dailysteps.text = amountSteps;
-  
-  let fileNum = Math.round((amountSteps - startCount)/10)
-  console.log((1 + fileNum).toString() + ".png");
-  if(fileNum <= 10) {
-    img.href = (1 + fileNum).toString() + ".png";
-  } else {
+  let fileNum = Math.floor(((amountSteps - startCount)/goal) * 10)
+  if(fileNum < 10) {
+    img.href = (fileNum).toString() + ".png";
+    comment.text = map[fileNum];
+  }  else {
     img.href = "10.png";
+    comment.text = map[10];
   }
 }
 
@@ -108,19 +114,3 @@ clock.ontick = () => updateClock();
 // Don't start with a blank screen
 applyTheme(backgdcol, foregdcol);
 updateClock();
-
-messaging.peerSocket.onopen = () => {
-  console.log("App Socket Open");
-}
-
-messaging.peerSocket.close = () => {
-  console.log("App Socket Closed");
-}
-
-// Listen for the onmessage event
-messaging.peerSocket.onmessage = function(evt) {
-  console.log("device got: " + evt.data.background);
-  applyTheme(evt.data.background, evt.data.foreground);
-  let json_theme = {"backg": evt.data.background, "foreg": evt.data.foreground};
-  fs.writeFileSync("theme.txt", json_theme, "json");
-}

@@ -1,6 +1,8 @@
 <svg class="background">
+  <image x="14" y="40" width="300" height="250" href="13.png" />
   <image id='testing' x="14" y="40" width="300" height="250" href="7.png" />
   <text id="myLabel" x="50%" y="20%" font-size="50"/>
   <text id="myDate" x="50%" y="32%" font-size="20" fill="white"/>
-  <text id="mySteps" />
+  <text id="mySteps" font-size="20"/>
+  <text id="comment" x="80%" y="93%" font-size="14" text-length="100" fill="white" text-anchor="middle" />
 </svg>
