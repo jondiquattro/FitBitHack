@@ -18,6 +18,29 @@ export function formatHour(hour, clockPref) {
   return hour;
 }
 
+export function goalToColor(value, total, low = 'fb-red', 
+                                          medium = 'fb-peach', 
+                                          high = 'fb-cyan', 
+                                          complete = 'fb-mint', ){
+  if (!value || !total){
+    color = low;
+    return color;
+  }
+  
+  let percent = value*100/total;
+  let color = 'white'; // #FFFFFF
+  if (percent < 33){
+    color = low; // #F83C40
+  } else if (percent < 66){
+    color = medium; // #FFCC33
+  } else if (percent < 100){
+    color = high;  // #14D3F5
+  } else {
+    color = complete; // #5BE37D
+  }
+  return color
+}
+
 //Localisation for Day and Month; the switch seems to be slower than the array...
 export var weekday = {
 	de: ["So", "Mo", "Di", "Mi", "Do", "Fr", "Sa"],

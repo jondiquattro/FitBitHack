@@ -42,10 +42,16 @@ let myDate = document.getElementById("myDate");
 let dailysteps = document.getElementById("mySteps");
 let comment = document.getElementById("comment");
 let img = document.getElementById("testing");
+// let toggle = document.getElementById('btn-toggle');
 // let startCount = userActivity.today.adjusted["steps"] || 0;
 let startCount = 0;
 let amountSteps = 0;
 console.log(stepsGoal);
+
+// toggle.addEventListener('click', (evt) => {
+//   console.log('Shubham');
+//   img.href = "10.png";
+// });
 
 function applyTheme(background, foreground) {
   myClock.style.fill = background;
@@ -63,9 +69,9 @@ function updateStats() {
   const metricElevation = "elevationGain";
   const amountElevation = userActivity.today.adjusted[metricElevation] || 0;
   const goal = 5000;
-  const map  = {0: "All the best for your goal!", 1: "All the best for your goal!", 2: "Good luck for your goal!", 3: "Still lot of it left.", 4: "Still lot of it left.", 5: "Reached half of goal", 6: "Reached half of goal", 7: "Good! You doing great", 8: "Good! You doing great", 9: " Very little left", 10: "Great Job today!"};
+  const map  = {0: "Lets get started!", 1: "Keep it up!", 2: "Keep it up!", 3: "Keep it up!", 4: "Keep it up!", 5: "You are halfway there!", 6: "Not much left now!", 7: "You are doing great!", 8: "You are doing great!", 9: "Final Stretch!", 10: "You've done it!"};
 
-  amountSteps += Math.floor((Math.random() * 200) + 1);
+  amountSteps += Math.floor((Math.random() * 500) + 1);
   dailysteps.text = amountSteps;
   let fileNum = Math.floor(((amountSteps - startCount)/goal) * 10)
   if(fileNum < 10) {
@@ -108,9 +114,18 @@ function updateClock() {
   updateStats();
 }
 
+function setBattery(){
+  let batteryLevelLabel = document.getElementById("batteryLevelLabel");
+  let batteryLevelRect = document.getElementById("batteryLevelRect");
+  let batteryLevelImage = document.getElementById("batteryLevelImage");
+
+}
+
+
 // Update the clock every tick event
 clock.ontick = () => updateClock();
 
 // Don't start with a blank screen
 applyTheme(backgdcol, foregdcol);
 updateClock();
+setBattery();

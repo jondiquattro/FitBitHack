@@ -1,8 +1,17 @@
 <svg class="background">
+<!--   <image id="batteryLevelImage" x="85%" y="4%" width="40" height="15" href="battery.png" load="sync"/>
+  <rect id="batteryLevelRect" x="298" y="13" width="31" height="10" fill="white" />
+  <text id="batteryLevelLabel" /> -->
+  
   <image x="14" y="40" width="300" height="250" href="13.png" />
   <image id='testing' x="14" y="40" width="300" height="250" href="7.png" />
   <text id="myLabel" x="50%" y="20%" font-size="50"/>
   <text id="myDate" x="50%" y="32%" font-size="20" fill="white"/>
   <text id="mySteps" font-size="20"/>
   <text id="comment" x="80%" y="93%" font-size="14" text-length="100" fill="white" text-anchor="middle" />
+  
+<!--   <svg id="btn-toggle" class="button toggle" x="-10%" y="-15%" width="116" height="125" pointer-events="visible">
+    <rect class="button"/>
+    <image id="toggle-icon" class="toggle play icon" x="50%-23" y="50%-23" height="46" width="46" href="10.png"/>
+  </svg> -->
 </svg>
