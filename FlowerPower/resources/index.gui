@@ -1,0 +1,28 @@
+<!--<svg class="background">
+  <text id="myLabel" />
+  <canvas id="myCanvas" width="348" height="250"></canvas>
+</svg> -->
+
+<svg viewport-fill="lightblue">
+  
+  <text id="myClock" x="10% + 25" y="10% + 25"
+      fill="black" font-size="42" font-family="System-Regular"
+      text-anchor="middle" text-length="5000">00:00</text>
+  
+  <rect id="stem" x = "165" y = "250" width="15" height="1" fill="green"/>
+  
+  <circle id="petal3" cx="134" cy="165" r="0" fill="#906A95" />
+  <circle id="petal1" cx="215" cy="165" r="0" fill="#604184" />
+  <circle id="petal2" cx="215" cy="85" r="0" fill="#906A95" />
+  <circle id="petal4" cx="134" cy="85" r="0" fill="#604184" />
+  
+  <circle id="petal5" cx="124" cy="125" r="0" fill="#9b789f" />
+  <circle id="petal6" cx="224" cy="125" r="0" fill="#9b789f" />
+  <circle id="petal7" cx="174" cy="175" r="0" fill="#4F2C77" />
+  <circle id="petal8" cx="174" cy="75" r="0" fill="#4F2C77" />
+  
+  <circle id="pistil" cx="174" cy="125" r="0" fill="#FFEB49" />
+  
+  <text id="mySteps"  x = "65%" y = "10% + 25" font-size="42"
+        font-family="System-Regular" text-length="5000"/>
+</svg>

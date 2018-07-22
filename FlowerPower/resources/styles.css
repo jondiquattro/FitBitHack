@@ -1,0 +1,19 @@
+.background {
+  viewport-fill: blue;
+}
+
+#myLabel {
+  font-size: 80;
+  font-family: System-Bold;
+  text-length: 32;
+  text-anchor: middle;
+  x: 50%;
+  y: 50%+40;
+  fill: white;
+}
+
+#petal1 {
+  height : 50;
+  width : 50;
+  background-color : linear-gradient(red, yellow);
+}
